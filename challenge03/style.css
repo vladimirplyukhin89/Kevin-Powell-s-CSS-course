@@ -41,7 +41,7 @@ a {
 
 .subtitle {
     font-size: 21px;
-    opacity: 0.8;
+    opacity: 0.85;
     font-weight: 400;
     margin-top: 1rem;
 }
@@ -52,7 +52,7 @@ a {
     color: var(--clr-second);
     display: inline-block;
     background: var(--clr-third);
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 31px;
@@ -74,7 +74,7 @@ a {
 
     .title {
         font-size: 32px;
-        line-height: normal;
+        line-height: 130%;
     }
 
     .subtitle {
