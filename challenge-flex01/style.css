@@ -1,0 +1,116 @@
+/* 
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+:root {
+    --clr-dark-green: #23424a;
+    --clr-dark-green-2: #136c72;
+    --clr-turquoise: #38cfd9;
+    --clr-white: #ffffff;
+    --clr-purple: #87629A;
+    --clr-dark-brown: #3A3A3A;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    overflow-x: hidden;
+    color: var(--clr-white);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2.25rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    
+    padding: 50px 0;
+    text-align: center;
+
+    width: 100%;
+
+}
+
+.col {
+    /* these are now flex items */
+    text-align: center;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: var(--clr-dark-green);
+}
+
+.hero__text {
+    width: 60%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color:  var(--clr-dark-green);
+    font-weight: 900;
+    background-color: var(--clr-turquoise);
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.benefits {
+    padding: 20px 0;
+    width: 100%;
+    color: var(--clr-dark-brown);
+}
+
+.benefits h2 {
+    color: var(--clr-purple);
+}
+
+.info {
+    width: 100%;
+    background-color:  var(--clr-dark-green-2);
+}
