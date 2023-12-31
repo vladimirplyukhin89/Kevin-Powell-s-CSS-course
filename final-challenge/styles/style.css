@@ -1,0 +1,39 @@
+/* Final CSS */
+@import './header.css';
+
+:root {
+  --clr-primary-dark: #2E323F;
+  --clr-secondary-dark: #3B4050;
+  --clr-grey: #6F737F;
+  --clr-white: #FFFFFF;
+  --clr-golden: #A59678;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--clr-white);
+  color: var(--clr-secondary-dark)
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+}

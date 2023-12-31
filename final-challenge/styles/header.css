@@ -1,0 +1,160 @@
+.header {
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-white);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.nav__list:first-child {
+  margin-bottom: 2rem;
+}
+
+.nav__link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Oswald', sans-serif;
+  color: var(--clr-white);
+  opacity: 0.7;
+}
+
+.nav__link:hover {
+  color: var(--clr-golden);
+}
+
+.nav__link--sing-up {
+  background-color: var(--clr-golden);
+  padding: 0.3em 1em;
+  border-radius: 100px;
+}
+
+.nav__link--sing-up:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-golden)
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background-color: var(--clr-secondary-dark);
+  color: var(--clr-white);
+  transition: opacity 250ms ease;
+
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: .75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: var(--clr-white);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+@media (min-width:700px) {
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .header__wrapper {
+    display: block;
+  }
+
+  .header__wrapper .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .header__wrapper {
+    margin-bottom: 0;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .nav__list:first-child {
+    margin: 0 auto;
+  }
+
+  .nav__link {
+    font-size: 1.3rem;
+  }
+}
