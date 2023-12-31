@@ -1,11 +1,13 @@
 /* Final CSS */
 @import './header.css';
 @import './hero.css';
+@import 'advantages.css';
 
 :root {
   --clr-primary-dark: #2E323F;
   --clr-secondary-dark: #3B4050;
   --clr-grey: #6F737F;
+  --clr-grey-opacity: rgba(111, 115, 127, 0.4);
   --clr-white: #FFFFFF;
   --clr-golden: #A59678;
 }
