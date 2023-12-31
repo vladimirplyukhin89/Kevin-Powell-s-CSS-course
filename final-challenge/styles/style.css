@@ -1,5 +1,6 @@
 /* Final CSS */
 @import './header.css';
+@import './hero.css';
 
 :root {
   --clr-primary-dark: #2E323F;
@@ -36,4 +37,55 @@ li {
 
 li a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn {
+  background-color: var(--clr-golden);
+  padding: 0.3em 1em;
+  border-radius: 100px;
+  transition: transform 0.2s ease-in;
+}
+
+.btn:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-golden);
+  box-shadow: 0 2px 6px var(--clr-golden);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+@media (min-width:720px) {
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width:1000px) {
+  .btn {
+    padding: 0.5em 1.5em;
+  }
 }
