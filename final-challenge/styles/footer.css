@@ -51,6 +51,10 @@
   opacity: 0.75;
 }
 
+.footer__link:hover {
+  color: var(--clr-golden);
+}
+
 @media (min-width: 720px) {
   .footer__title {
     font-size: 2rem;
