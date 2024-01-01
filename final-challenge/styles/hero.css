@@ -10,13 +10,17 @@
 .hero__title {
   color: var(--clr-white);
   font-size: 2.5rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 3rem;
   font-family: Oswald, sans-serif;
 }
 
 .hero__title span {
   color: var(--clr-golden);
+}
+
+.hero__breaker {
+  display: none;
 }
 
 .hero__block p {
@@ -40,7 +44,6 @@
 @media (min-width:720px) {
   .hero__title {
     font-size: 5.625rem;
-    margin-bottom: 0;
   }
 
   .hero__block {
@@ -61,5 +64,18 @@
   .hero {
     padding-top: 7rem;
     padding-bottom: 10rem;
+  }
+
+  .hero .row--large>* {
+    flex-basis: 100%;
+  }
+
+  .hero__breaker {
+    display: block;
+  }
+
+
+  .hero__title {
+    margin-bottom: 0;
   }
 }
