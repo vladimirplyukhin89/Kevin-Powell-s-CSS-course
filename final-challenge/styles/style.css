@@ -1,7 +1,8 @@
 /* Final CSS */
-@import './header.css';
-@import './hero.css';
+@import 'header.css';
+@import 'hero.css';
 @import 'advantages.css';
+@import 'info.css';
 
 :root {
   --clr-primary-dark: #2E323F;
@@ -75,7 +76,7 @@ button {
 }
 
 .btn:active {
-  transform: translateY(1px);
+  transform: translateY(2px);
 }
 
 @media (min-width:720px) {
@@ -89,5 +90,10 @@ button {
 @media (min-width:1000px) {
   .btn {
     padding: 0.5em 1.5em;
+  }
+
+  .row--large {
+    display: flex;
+    gap: 2.5rem;
   }
 }
